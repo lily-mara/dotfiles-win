@@ -1,0 +1,22 @@
+@powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('http://bit.ly/psChocInstall'))" && SET PATH=%PATH%;%systemdrive%\chocolatey\bin
+cinst skype
+cinst pidgin
+cinst vlc
+cinst FoxitReader
+cinst imgburn
+cinst irfanview
+cinst launchy
+cinst xbmc
+cinst steam
+cinst wizmouse
+cinst handbrake
+cinst f.lux
+cinst googlechrome
+cinst windirstat
+cinst ccleaner
+cinst googledrive
+cinst virtualbox
+cinst Revo.Uninstaller
+cinst EthanBrown.SublimeText2.EditorPackages
+cinst xming
+cinst razer

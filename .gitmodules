@@ -1,0 +1,3 @@
+[submodule "autohotkey-scripts"]
+	path = autohotkey-scripts
+	url = https://github.com/natemara/autohotkey-scripts

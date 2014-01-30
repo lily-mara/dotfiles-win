@@ -1,0 +1,9 @@
+@ECHO OFF
+cd %~dp1
+ECHO Compiling %~nx1...
+IF EXIST %~n1.class (
+DEL %~n1.class
+)
+javac %~nx1
+ECHO Done!
+pause
