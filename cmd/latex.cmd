@@ -1,5 +1,5 @@
 @ECHO off
-latex %1
+latex %~n1.tex
 dvipdfm %~n1.dvi
 rm %~n1.dvi
 rm %~n1.log
