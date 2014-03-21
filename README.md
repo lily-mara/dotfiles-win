@@ -1,6 +1,4 @@
-Dotfiles - Windoze Edition
-==========================
+Windows "Dotfiles"
+==================
 
-inb4 windoze can't into scripting
-
-just some simple scripts for when I'm not on a \*nix system
+Just some simple scripts and configs for when I'm not on a \*nix system
