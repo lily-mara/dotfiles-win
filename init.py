@@ -8,9 +8,13 @@ from tkinter import Tk
 
 home_path = os.environ.get('HOMEPATH')
 
-has_vimfiles = os.path.exists(home_path + '\\vimfiles')
-has_dot_vim = os.path.exists(home_path + '\\.vim')
-has_vrapper_link = os.path.exists(home_path + '\\.vrapperrc')
+vimfile_path = home_path + '\\vimfiles'
+dot_vim_path = home_path + '\\.vim'
+vrapper_path = home_path + '\\.vrapperrc'
+
+has_vimfiles = os.path.exists(vimfile_path)
+has_dot_vim = os.path.exists(dot_vim_path)
+has_vrapper_link = os.path.exists(vrapper_path)
 
 input('Please ensure that you are running this program with admin privaledges...')
 
@@ -23,17 +27,17 @@ if not has_vimfiles:
 	Tk().withdraw()
 	vim_folder = askdirectory()
 
-	call(['mklink', vim_folder + '\\.vimrc', home_path + '\\vimfiles\\.vimrc'])
-	call(['mklink', vim_folder + '\\configs', home_path + '\\vimfiles\\configs'])
+	call(['mklink', vim_folder + '\\.vimrc', vimfile_path + '\\.vimrc'])
+	call(['mklink', vim_folder + '\\configs', vimfile_path + '\\configs'])
 
 
 if not has_dot_vim:
 	input('Press ENTER to make .vim symlink...')
-	call(['mklink', '/d', home_path + '\\.vim', home_path + '\\vimfiles'])
+	call(['mklink', '/d', home_path + '\\.vim', vimfile_path])
 	print()
 
 if not has_vrapper_link:
 	input('Press ENTER to make .vrapperrc symlink...')
-	call(['mklink', home_path + '\\.vrapperrc', home_path + '\\vimfiles\.vrapperrc'])
+	call(['mklink', vrapper_path, vimfile_path + '\\.vrapperrc'])
 	print()
 
