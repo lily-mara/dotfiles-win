@@ -39,3 +39,7 @@ Thumbs.db
 # Swap file #
 #############
 *.swp
+
+# Tags file #
+#############
+tags
