@@ -14,8 +14,6 @@ Return
 
 ;shortcuts for Vim
 
-Capslock::Ctrl
-
 OpenWithVim() ;opens current file in vim if using XYPlorer, else opens vim
 {
 	EnvGet, DROPBOX, DB_HOME
@@ -40,3 +38,6 @@ Return
 Insert::
 OpenWithVim()
 Return
+
+Capslock::send {lctrl down}
+Capslock up::send % (a_priorkey = "Capslock") ? "{lctrl up}{esc}" : "{lctrl up}"
