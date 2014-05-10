@@ -24,12 +24,12 @@ OpenWithVim() ;opens current file in vim if using XYPlorer, else opens vim
 	{
 		SendInput ^p
 		Sleep, 100
-		Run, "gvim" "%clipboard%"
+		Run, "runemacs" "%clipboard%"
 		clipboard = %oldClipboard%
 	}
 	Else
 	{
-		Run, "gvim" +star, C:\users\nate
+		Run, "runemacs", C:\users\nate
 	}
 }
 
