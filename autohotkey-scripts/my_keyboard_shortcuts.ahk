@@ -12,10 +12,6 @@ EnvGet, HOME, HOMEPATH
 run "gvim" "%HOME%\.dotfiles\autohotkey-scripts\my_keyboard_shortcuts.ahk"
 Return
 
-;shortcuts for Vim
-
-Capslock::Ctrl
-
 OpenWithVim() ;opens current file in vim if using XYPlorer, else opens vim
 {
 	EnvGet, DROPBOX, DB_HOME
