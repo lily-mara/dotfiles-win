@@ -36,3 +36,11 @@ Return
 Insert::
 OpenWithVim()
 Return
+
+#t::
+Run, "C:\Program Files\ConEmu\ConEmu64.exe"
+Return
+
+#^t::
+Run, "cmd.exe"
+Return
