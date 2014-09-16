@@ -1,0 +1,1 @@
+pandoc -o out.pdf %*
