@@ -38,7 +38,7 @@ OpenWithVim()
 Return
 
 #t::
-Run, "C:\Program Files\ConEmu\ConEmu64.exe"
+Run, "C:\cmder\Cmder.exe"
 Return
 
 #^t::
